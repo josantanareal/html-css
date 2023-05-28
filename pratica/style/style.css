@@ -23,7 +23,7 @@ body {
     place-items: center;
     margin: 0;
     padding: 0px 100px;
-    background-image: url("background.svg");
+    background-image: url("/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
