@@ -9,6 +9,8 @@
 }
 
 *{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -18,40 +20,77 @@ html, body, .wrapper{
 
 body {
     display: grid;
-    align-items: center;
-    justify-content: right;
+    place-items: center;
     margin: 0;
     padding: 0px 100px;
-    background-color: #943DF2;
+    background-image: url("/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-card {
     position: relative;
-    z-index: 5;
+    z-index: 3;
+    width: 600px;
+    height: 600px;
     background-color: white;
     margin: 0px;
-    padding: 30px 30px 60px 30px;
+    padding: 120px 30px 60px 30px;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.616) 4px 4px 10px;
 }
 
+.login-form {
+    display: grid;
+    margin: 0px;
+    gap: 16px;
+    justify-items: center;
+}
+
+
+.login-form > input, .login-form > button  {
+    margin: 0px;
+    width: 80%;
+    height: 40px;
+    border-radius: 30px;
+}
+.login-form > input {
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-form > button {
+    background-color: var(--cor04);
+    border: 0;
+}
+
+.login-form > button:hover {
+    background-color: var(--cor02);
+}
+
 div h2 {
-    font-size: 30px;
+    font-size: 60px;
     text-align: center;
     margin: 0px;
     padding: 10px;
 }
 
 div h3 {
-    text-align: left;
+    text-align: center;
     margin: 0px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.452);
 }
 
-.login-form {
-    display: grid;
-    gap: 16px;
-}
+@media (width <= 700px) {
+    body{
+        padding: 0;
+    }
 
-.login-form > input {
-    margin: 0px;
+    .login-card {
+        margin: 0;
+        width: 400px;
+        height: 500px;
+        padding: 90px 20px;
+        }
 }
