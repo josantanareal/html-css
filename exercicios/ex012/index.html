@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTM5</title>
+</head>
+    <body>
+        <h1>Inserindo videos hospedados localmente</h1>
+        <p>Este video esta hospedado no meu proprio servidor.</p>
+        <video width="500px" poster="imagens/garen.jpg" controls>
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/meu-video.mp4" type="video/m4v">
+            <source src="midia/meu-video.webm" type="video/webm">
+            <p>Seu navegador não é compativel com reprodução de video.</p>
+        </video>
+        <h1>Inserindo videos do YouTube</h1>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/6GCOl9pgNKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>

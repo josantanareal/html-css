@@ -1,0 +1,11 @@
+primaria
+
+#0044FF
+
+secundaria
+
+#0F7DFF
+
+terciaria
+
+#00A6FF
