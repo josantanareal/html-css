@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+    --cor00: #762EEB;
+    --cor01: #943DF2;
+    --cor02: #9B42DB;
+    --cor03: #B93DF2;
+    --cor04: #C23AE8;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, .wrapper{
+    height: 100%;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: right;
+    margin: 0;
+    padding: 0px 100px;
+    background-color: #943DF2;
+}
+
+.login-card {
+    position: relative;
+    z-index: 5;
+    background-color: white;
+    margin: 0px;
+    padding: 30px 30px 60px 30px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.616) 4px 4px 10px;
+}
+
+div h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+div h3 {
+    text-align: left;
+    margin: 0px;
+}
+
+.login-form {
+    display: grid;
+    gap: 16px;
+}
+
+.login-form > input {
+    margin: 0px;
+}
